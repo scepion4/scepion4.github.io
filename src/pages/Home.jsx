@@ -12,7 +12,7 @@ export default function Home() {
 <Service/>
 <Cars/>
 <Advantage/>
-<Viber/>
+<Viber/> 
 </>
   );
 }

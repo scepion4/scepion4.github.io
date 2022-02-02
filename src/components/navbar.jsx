@@ -12,29 +12,31 @@ export default function SiteNavbar() {
  const dispatch = useDispatch()
  const language=useSelector(state=>state.LanguageSlice.valueLanguage)
  localStorage.setItem("language",language)
- 
- console.log(language)
   return (
     <>
    <Navbar bg="light" expand="lg" >
    <Container fluid>
      <Navbar.Brand href="/">{language==='Русский'?"Трансфер Чернигов":"Трансфер Чернігів"}</Navbar.Brand>
      <Navbar.Toggle aria-controls="navbarScroll" />
-     <Navbar.Collapse id="navbarScroll">
+     <Navbar.Collapse id="navbarToggleExternalContent">
        <Nav
-         className="me-auto my-2 my-lg-0"
+         className="me-auto my-4 my-lg-0"
          style={{ maxHeight: '100px' }}
          navbarScroll
        >
 <a style={{marginRight:'30pxh',textDecoration:'none', color:'#1a1515'}} href='/help'>{language==='Русский'?"Помошь":"Допомога"}</a>
        </Nav>
+       <Nav 
+       className="my-4 my-lg-0"
+         style={{ display:'flex',alignItems:'center', maxHeight: '100px' }}
+         navbarScroll>
 <a className='nav-number' href='tel:+380956309510'>+380956309510</a>
 <a className='nav-number' href='tel:+380637827987'>+380637827987</a>
-<DropdownButton style={{marginRight:'30px'}} id="dropdown-basic-button" title={localStorage.getItem('language')} className="d-flex me-6">
+<DropdownButton style={{marginRight:'30px'}} id="dropdown-basic-button" title={localStorage.getItem('language')?localStorage.getItem('language'):'Русский'} className="d-flex me-6">
   <Dropdown.Item onClick={e=>dispatch(chanageLanguage(e.target.innerText))} href="#">Русский</Dropdown.Item>
   <Dropdown.Item onClick={e=>dispatch(chanageLanguage(e.target.innerText))} href="#">Українська</Dropdown.Item>
 </DropdownButton>
-
+</Nav>
      </Navbar.Collapse>
    </Container>
  </Navbar>

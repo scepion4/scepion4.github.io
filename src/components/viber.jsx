@@ -1,6 +1,9 @@
 import React from 'react';
-import viber from '../img/icons/Viber_big.png'
+import viberBig from '../img/icons/Viber_big.png'
+import viber from '../img/icons/Viber.png'
+
    
 export default function Viber() {
-return <a className='viber' title="Viber" href="viber://chat?number=79270000000"><img src={viber} alt="Написать в Viber" /></a>;
+   const devices = new RegExp('Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini', "i");
+return <a className='viber' title="Viber" href="viber://chat?number=79270000000">{devices.test(navigator.userAgent)?<img src={viber} alt="Написать в Viber" />:<img src={viberBig} alt="Написать в Viber" />}</a>;
 }
