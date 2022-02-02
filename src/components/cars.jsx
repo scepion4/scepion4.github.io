@@ -7,13 +7,13 @@ export default function Cars() {
   return (
   <div style={{display:'flex',justifyContent:'center'}}>
     <h4>Наш автопарк</h4>
-   <Carousel fade style={{maxWidth:'1000px'}}>
+   <Carousel fade style={{maxWidth:'80%'}}>
    <Carousel.Item>
      <img
        className="d-block w-100"
        src={tauran}
        alt="First slide"
-       style={{height:'400px'}}
+       style={{objectFit:'cover'}}
      />
      <Carousel.Caption>
        <h3>VW tauran</h3>
@@ -24,7 +24,7 @@ export default function Cars() {
        className="d-block w-100"
        src={t5}
        alt="Second slide"
-       style={{height:'400px'}}
+       style={{objectFit:'cover'}}
      />
  
      <Carousel.Caption>
@@ -36,7 +36,7 @@ export default function Cars() {
        className="d-block w-100"
        src={fabia}
        alt="Third slide"
-       style={{height:'400px'}}
+       style={{objectFit:'cover'}}
      />
  
      <Carousel.Caption>
