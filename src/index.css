@@ -11,3 +11,94 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.nav-number{
+  text-decoration: none;
+  margin-right: 20px;
+color:black;
+display: block;
+}
+.nav-number::before{
+  content: '';
+  background-image: url('./img/icons/pngtree-flat-phone-image_1158155.jpg');
+  width: 20px;
+  height: 20px;
+  background-size: 20px 20px;
+  position: absolute;
+}
+.banner{
+  background-image: url('./img/airport-g163305026_1920.jpg');
+  width:100%;
+  height: 100%;
+  background-size: 100% 100%;
+}
+.title-banner{
+  padding: 80px;
+  font-size: 60px;
+}
+.text-banner{
+  padding: 80px;
+  font-size: 40px;
+}
+.content-banner{
+  text-align: center;
+  padding-bottom: 80px;
+}
+.viber{
+  position: fixed;
+  right: 30px;
+  bottom: 50px;
+  cursor: pointer;
+  text-align: center;
+  z-index: 30;
+}
+.service-title{
+  text-align: center;
+  margin: 40px 0px;
+}
+.footer{
+background-color:#1a1515;
+overflow: hidden;
+}
+.link-footer{
+  padding-right:15px ;
+}
+.wrraper-clients{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0px auto;
+}
+.button-clients{
+  margin-top: 20px;
+}
+.clients-link{
+  margin-bottom:30px ;
+}
+.help-wrraper{
+  margin: 15px;
+}
+.help-quetion{
+  font-weight: 700;
+}
+.help-wrraper h3{
+  margin-top:30px ;
+  margin-bottom:30px ;
+}
+.wrraper-advantage{
+  max-width: 80%;
+  max-height: auto;
+  border: 2px solid grey;
+  padding: 30px;
+  margin: 0px auto;
+}
+.advantage{
+  margin-bottom: 80px;
+}
+.col{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
