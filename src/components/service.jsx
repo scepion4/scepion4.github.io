@@ -14,18 +14,18 @@ export default function Service() {
             <Card className="bg-dark text-white mx-5 mb-4">
                <Card.Img style={{maxHeight:'400px', objectFit:'cover'}} src={borispol} alt="Card image" />
                <Card.ImgOverlay>
-                  <Card.Title>{language==='Русский'?"Чернигов- а/п Борисполь":"Чернігів - а/п Бориспіль"}</Card.Title>
+                  <Card.Title>{language==='Русский'?"Чернигов- а/п Борисполь-Чернигов":"Чернігів - а/п Бориспіль-Чернігів"}</Card.Title>
                   <Card.Text>
-                  {language==='Русский'?"Трансфер вас до аеропорта Борисполь на ваш рейс":"Трансфер вас до аеропорту Бориспіль на ваш рейс"}
+                  {language==='Русский'?"Комфортный трансфер с/до аэропорта Борисполь ":"Комфортний трансфер з/до аеропорту Бориспіль"}
                   </Card.Text>
                </Card.ImgOverlay>
             </Card>
             <Card className="bg-dark text-white mx-5 mb-4">
                <Card.Img style={{maxHeight:'400px', objectFit:'cover'}} src={jul} alt="Card image" />
                <Card.ImgOverlay>
-                  <Card.Title>{language==='Русский'?"Чернигов- а/п Жуляны":"Чернігів - а/п Жуляни"}</Card.Title>
+                  <Card.Title>{language==='Русский'?"Чернигов- а/п Жуляны-Чернигов":"Чернігів - а/п Жуляни-Чернігів"}</Card.Title>
                   <Card.Text>
-                  {language==='Русский'?"Трансфер вас до аеропорта Жуляны на ваш рейс":"Трансфер вас до аеропорту Жуляни на ваш рейс"}
+                  {language==='Русский'?"Комфортний трансфер с/до аэропорта Жуляны":"Комфортний трансфер з/до аеропорту Жуляни"}
                   </Card.Text>
                </Card.ImgOverlay>
             </Card>

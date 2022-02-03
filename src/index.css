@@ -34,16 +34,25 @@ display: block;
   background-repeat: no-repeat;
 }
 .title-banner{
-  padding: 80px;
+  padding: 60px;
   font-size: 60px;
+  color: #1a1515;
+  font-family: 'Anton', sans-serif;
 }
-.text-banner{
-  padding: 80px;
+.banner-subtitle{
+  padding: 30px;
   font-size: 40px;
+  font-family: 'Quintessential', cursive;
+}
+.banner-text{
+  font-size: 20px;
+  padding-bottom:20px ;
+  color: aliceblue;
 }
 .content-banner{
   text-align: center;
   padding-bottom: 80px;
+  color:black;
 }
 .viber{
   position: fixed;
@@ -77,13 +86,16 @@ overflow: hidden;
 .clients-link{
   margin-bottom:30px ;
 }
+.subtitle-advantage{
+  text-align: center;
+}
 .help-wrraper{
   margin: 15px;
 }
 .help-quetion{
   font-weight: 700;
 }
-.Help{
+.help{
   min-height: calc(100vh - 190px);
 }
 .help-wrraper h3{
@@ -106,4 +118,44 @@ overflow: hidden;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width:550px) {
+  .banner{
+    background-size:contain;
+  }
+  .dropdawn a{
+    margin-top: 10px;
+    margin-bottom:10px ;
+  };
+  .title-banner{
+    padding: 5px;
+    font-size: 30px;
+    color: #1a1515;
+  }
+  .banner-subtitle{
+    padding: 0px;
+    font-size: 20px;
+  }
+  .content-banner{
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width:910px) {
+  .banner{
+    background-size:cover;
+  }
+  .title-banner{
+    padding: 30px;
+    font-size: 40px;
+    color: #1a1515;
+  }
+  .banner-subtitle{
+    padding: 30px;
+    font-size: 30px;
+  }
+  .content-banner{
+    padding-bottom: 40px;
+  }
 }

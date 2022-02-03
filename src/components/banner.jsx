@@ -10,7 +10,8 @@ export default function Banner() {
          <div className='wrraper-banner'>
             <div className='content-banner'>
                <h3 className='title-banner'>{language==='Русский'?"Трансфер Чернигов":"Трансфер Чернігів"}</h3>
-               <p className='text-banner'>{language==='Русский'?"Везем от дома до терминала":"Веземо від будинку до терміналу"}</p>
+               <p className='banner-subtitle'>{language==='Русский'?"Вовремя. Быстро. Комфортно.":"Вчасно. Швидко. Комфортно."}</p>
+               <p className='banner-text'>{language==='Русский'?"Везем от дома до терминала груповым или индивидуальным":"Веземо від будинку до терміналу груповим або індивідуальним"}</p>
                <div className="d-grid gap-4 mx-4">
             <Button href='tel:+380956309510' variant="primary" size="lg">
             +38 095 63 09 510

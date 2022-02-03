@@ -11,26 +11,21 @@ export default function Advantage() {
   return (
      <div className='advantage'>
         <div className='wrraper-advantage'>
-           <Row className="align-items-center justify-content-center">
+           <Row md={3} xs={1} className="align-items-center justify-content-center">
               <Col>
               <img src={clock}/>
               <h6 className='title-advantage'>{language==='Русский'?"Время":"Час"}</h6>
-              <p className='subtitle-advantage'>{language==='Русский'?"Своевременная доставка вас на рейс и домой":"Своєчасна доставка вас на рейс"}</p>
+              <p className='subtitle-advantage'>{language==='Русский'?"Всегда рассчитуем время что бы не опоздать на рейс":"Своєчасна доставка вас на рейс"}</p>
               </Col>
               <Col>
               <img src={plane}/>
               <h6 className='title-advantage'>{language==='Русский'?"Встеча":"Зустріч"}</h6>
-              <p className='subtitle-advantage'>{language==='Русский'?"Наш водитель встретит вас по возвращению из путешествия":"Наш водій зустріне вас по поверненню із подорожі"}</p>
+              <p className='subtitle-advantage'>{language==='Русский'?"По прилету в аэропорт звоним и предоставляем информацию по трансферу домой":"Наш водій зустріне вас по поверненню із подорожі"}</p>
               </Col>
               <Col>
               <img src={home}/>
               <h6 className='title-advantage'>{language==='Русский'?"Отправка":"Відправлення"}</h6>
-              <p className='subtitle-advantage'>{language==='Русский'?"Доставляем из дома в аэропорт":"Доставляемо із дому до аеропорту"}</p>
-              </Col>
-              <Col>
-              <img src={money}/>
-              <h6 className='title-advantage'>{language==='Русский'?"Цена":"Ціна"}</h6>
-              <p className='subtitle-advantage'>{language==='Русский'?"Самые низкие цены":"Самі низькі ціни"}</p>
+              <p className='subtitle-advantage'>{language==='Русский'?"Забираем от домаи доставляем на комфортных автомобилях в аэропорт":"Забираємо від будинку і доставляємо на комфортних автомобілях в аеропорт"}</p>
               </Col>
            </Row>
         </div>
