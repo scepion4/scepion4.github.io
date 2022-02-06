@@ -1,6 +1,6 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
-import tauran from '../img/Tauran.jpg'
+import tauran from '../img/tauran.jpg'
 import vw from '../img/VW T5.jpg'
 import fabia from '../img/fabia.jpg'
 import octavia from '../img/octavia.jpg'
