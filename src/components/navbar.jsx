@@ -11,8 +11,9 @@ import phone from '../img/icons/phone.jpg'
 
 export default function SiteNavbar() {
  const dispatch = useDispatch()
- const language=useSelector(state=>state.LanguageSlice.valueLanguage)
- localStorage.setItem("language",language)
+ let language=useSelector(state=>state.LanguageSlice.valueLanguage)
+ localStorage.setItem("language",language?language:'Русский')
+ 
   return (
     <>
    <Navbar bg="light" expand="lg" >
