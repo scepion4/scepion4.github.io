@@ -13,7 +13,7 @@ export default function SiteNavbar() {
  const dispatch = useDispatch()
  let language=useSelector(state=>state.LanguageSlice.valueLanguage)
 
- if(language===null){
+ if(!language===null){
  localStorage.setItem("language",language)
  }else{
 localStorage.setItem("language",'Русский')
