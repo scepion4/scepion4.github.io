@@ -32,7 +32,7 @@ export default function SiteNavbar() {
          style={{display:'flex',alignItems:'center', marginTop:'30px', maxHeight: '100px' }}>
 <a className='nav-number' href='tel:+380956309510'><img src={phone}></img>+380956309510</a>
 <a className='nav-number' href='tel:+380637827987'><img src={phone}></img>+380637827987</a>
-<DropdownButton style={{marginRight:'30px'}} id="dropdown-menu-align-end" title={localStorage.getItem('language')?localStorage.getItem('language'):'Русский'} className="d-flex me-6">
+<DropdownButton style={{marginRight:'30px'}} id="dropdown-menu-align-end" title={localStorage.getItem('language')?localStorage.getItem('language'):dispatch(chanageLanguage('Русский'))} className="d-flex me-6">
   <Dropdown.Item onClick={e=>dispatch(chanageLanguage(e.target.innerText))} href="#">Русский</Dropdown.Item>
   <Dropdown.Item onClick={e=>dispatch(chanageLanguage(e.target.innerText))} href="#">Українська</Dropdown.Item>
   <Dropdown.Item onClick={e=>dispatch(chanageLanguage(e.target.innerText))} href="#">English</Dropdown.Item>
