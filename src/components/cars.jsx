@@ -1,23 +1,25 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
-import tauran from '../img/tauran.jpg'
-import vw from '../img/wv t5.png'
-import fabia from '../img/skoda2.jpg'
-import octavia from '../img/skoda.jpg'
+import tauran from '../img/Tauran.jpg'
+import vw from '../img/VW T5.jpg'
+import fabia from '../img/fabia.jpg'
+import octavia from '../img/octavia.jpg'
 import mercedes from '../img/mercedes.jpg'
 import opel1 from '../img/opel.jpg'
 import opel2 from '../img/opel2.jpg'
-import outlander from '../img/outlander.webp'
-
+import outlander from '../img/outlander.jpg'
+import  {languageAll}  from './language';
+import { useSelector } from 'react-redux';
 
 export default function Cars() {
+  const language=useSelector(state=>state.LanguageSlice.valueLanguage)
   return (
-    <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <h4>Наш автопарк</h4>
-      <Carousel fade style={{ maxWidth: '80%' }}>
+    <div className='cars' style={{ display: 'flex', justifyContent: 'center' }}>
+      <h4>{languageAll.cars[language]}</h4>
+      <Carousel variant='dark'>
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className=" d-block w-100"
             src={tauran}
             alt="First slide"
           />
@@ -27,7 +29,7 @@ export default function Cars() {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className=" d-block w-100"
             src={vw}
             alt="Second slide"
           />
@@ -38,7 +40,7 @@ export default function Cars() {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className=" d-block w-100"
             src={fabia}
             alt="Third slide"
           />
@@ -71,7 +73,7 @@ export default function Cars() {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className=" d-block w-100"
             src={opel1}
             alt="Third slide"
           />
@@ -82,7 +84,7 @@ export default function Cars() {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className=" d-block w-100"
             src={opel2}
             alt="Third slide"
           />
@@ -93,7 +95,7 @@ export default function Cars() {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className=" d-block w-100"
             src={outlander}
             alt="Third slide"
           />

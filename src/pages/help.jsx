@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import  {languageAll}  from '../components/language';
 
 export default function Help() {
    const language=useSelector(state=>state.LanguageSlice.valueLanguage)
@@ -7,24 +8,17 @@ export default function Help() {
   return (
      <div className='help'>
         <div className='help-wrraper'>
-           <h3>{language==='Русский'?'Ответы на часто возникающие вопросы':'Відповіді на найчастіше виникаючі питання'}</h3>
-           <p className='help-quetion'>{language==='Русский'?"Как узнать цену трансфера?":'Як дізнатись ціну трансферу?'}</p>
-           <p className='help-answer'>{language==='Русский'?
-           'Что бы узнать цену поездки свяжитесь с нами по телефону +380956309510 или +380637827987.':
-           "Щоб дізнатись ціну поїздки зв'яжіться з нами по телефону"
-         }</p>
-           <p className='help-quetion'>{language==='Русский'?'Как заказать поездку?':'Як замовити поїздку?'}</p>
-           <p className='help-answer'>{language==='Русский'?
-           'Заказать поезку можно позвонив по телефону +380956309510, +380637827987 или написав нам в один из мессенджеров.':
-           'Замовити поїздку можливо подзвонив за телефоном +380956309510, +380637827987 або написавши в один із месенджерів'}</p>
-           <p className='help-quetion'>{language==='Русский'?'Как я могу связаться с водителем?':"Як я можу зв\'язатись з водієм?"}</p>
-           <p className='help-answer'>{language==='Русский'?
-           'После договоренности о поездке водитель свяжеться с вами и оставит номер телефона.':
-           "Після домовленості за поїздку водій з вами зв'яжеться і залишить номер телефону"}</p>
-           <p className='help-quetion'>{language==='Русский'?'Существуют какие-то дополнительние платежи?':'Існують якісь додаткові платежі?'}</p>
-           <p className='help-answer'>{language==='Русский'?'Нет, оплачиваеться только зарание оговоренная сума.':'Ні, оплачується лише раніше обумовлена сума'}</p>
-           <p className='help-quetion'>{language==='Русский'?'Что поповоду чаевих?':'Що з приводу чайових?'}</p>
-           <p className='help-answer'>{language==='Русский'?'На ваше усмотрение.':'На ваш розсуд.'}</p>
+           <h3>{languageAll.helpTitle[language]}</h3>
+           <p className='help-quetion'>{languageAll.helpQuestionCost[language]}</p>
+           <p className='help-answer'>{languageAll.helpAskCost[language]}</p>
+           <p className='help-quetion'>{languageAll.helpQuestionOrder[language]}</p>
+           <p className='help-answer'>{languageAll.helpAskOrder[language]}</p>
+           <p className='help-quetion'>{languageAll.helpQuestionCall[language]}</p>
+           <p className='help-answer'>{languageAll.helpAskCall[language]}</p>
+           <p className='help-quetion'>{languageAll.helpQuestionPay[language]}</p>
+           <p className='help-answer'>{languageAll.helpAskPay[language]}</p>
+           <p className='help-quetion'>{languageAll.helpQuestionTips[language]}</p>
+           <p className='help-answer'>{languageAll.helpAskTips[language]}</p>
      </div>
      </div>
   )

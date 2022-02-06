@@ -1,60 +1,57 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-.nav-number{
+.nav-number {
   text-decoration: none;
   margin-right: 20px;
-color:black;
-display: block;
+  color: black;
+  display: block;
 }
-.nav-number::before{
-  content: '';
-  background-image: url('./img/icons/pngtree-flat-phone-image_1158155.jpg');
+.nav-number img {
   width: 20px;
   height: 20px;
-  background-size: 20px 20px;
-  position: absolute;
 }
-.banner{
-  background-image: url('./img/banner.jpg');
-  width:100%;
+.banner {
+  background-image: url("./img/banner.jpg");
+  width: 100%;
   height: 100%;
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
-.title-banner{
+.title-banner {
   padding: 60px;
   font-size: 60px;
-  color: #1a1515;
-  font-family: 'Anton', sans-serif;
+  color: white;
+  font-family: "Anton", sans-serif;
+  text-shadow: black 2px 2px 2px;
 }
-.banner-subtitle{
+.banner-subtitle {
   padding: 30px;
   font-size: 40px;
-  font-family: 'Quintessential', cursive;
+  font-family: "Quintessential", cursive;
+  text-shadow: white 2px 1px 1px;
 }
-.banner-text{
+.banner-text {
   font-size: 20px;
-  padding-bottom:20px ;
+  padding-bottom: 20px;
   color: aliceblue;
+  text-shadow: black 2px 2px 2px;
 }
-.content-banner{
+.content-banner {
   text-align: center;
   padding-bottom: 80px;
-  color:black;
+  color: black;
 }
-.viber{
+.viber {
   position: fixed;
   right: 30px;
   bottom: 50px;
@@ -62,100 +59,107 @@ display: block;
   text-align: center;
   z-index: 30;
 }
-.service-title{
+.service-title {
   text-align: center;
   margin: 40px 0px;
 }
-.footer{
-background-color:#1a1515;
-overflow: hidden;
+.footer {
+  background-color: #1a1515;
+  overflow: hidden;
 }
-.link-footer{
-  padding-right:15px ;
+.cars{
+  display: flex;
+  justify-content: center;
 }
-.wrraper-clients{
+.cars h3{
+  text-shadow: white 1px 0.5px 0.5px;
+}
+.link-footer {
+  padding-right: 15px;
+}
+.wrraper-clients {
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 1200px;
   margin: 0px auto;
 }
-.button-clients{
+.button-clients {
   margin-top: 20px;
 }
-.clients-link{
-  margin-bottom:30px ;
+.clients-link {
+  margin-bottom: 30px;
 }
-.subtitle-advantage{
+.subtitle-advantage {
   text-align: center;
 }
-.help-wrraper{
+.help-wrraper {
   margin: 15px;
 }
-.help-quetion{
+.help-quetion {
   font-weight: 700;
 }
-.help{
+.help {
   min-height: calc(100vh - 190px);
 }
-.help-wrraper h3{
-  margin-top:30px ;
-  margin-bottom:30px ;
- 
+.help-wrraper h3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-.wrraper-advantage{
+.wrraper-advantage {
   max-width: 80%;
   max-height: auto;
   border: 2px solid grey;
   padding: 30px;
   margin: 0px auto;
 }
-.advantage{
+.advantage {
   margin-bottom: 80px;
 }
-.col{
+.col {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-@media (max-width:550px) {
-  .banner{
-    background-size:contain;
+@media (max-width: 550px) {
+  .banner {
+    background-image: url("./img/banner-small.jpg");
+    background-size: cover;
   }
-  .dropdawn a{
+  .dropdawn a {
     margin-top: 10px;
-    margin-bottom:10px ;
-  };
-  .title-banner{
+    margin-bottom: 10px;
+  }
+  .title-banner {
     padding: 5px;
     font-size: 30px;
     color: #1a1515;
   }
-  .banner-subtitle{
+  .banner-subtitle {
     padding: 0px;
     font-size: 20px;
   }
-  .content-banner{
+  .content-banner {
     padding-bottom: 20px;
   }
 }
 
-@media (max-width:910px) {
-  .banner{
-    background-size:cover;
+@media (max-width: 910px) {
+  .banner {
+    background-size: cover;
   }
-  .title-banner{
+  .title-banner {
     padding: 30px;
     font-size: 40px;
-    color: #1a1515;
+    color: white;
   }
-  .banner-subtitle{
+  .banner-subtitle {
     padding: 30px;
     font-size: 30px;
   }
-  .content-banner{
+  .content-banner {
     padding-bottom: 40px;
   }
 }
