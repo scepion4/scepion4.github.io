@@ -85,7 +85,7 @@ export const languageAll ={
       'English':"Sending",
    },
    "advantageRight":{
-      'Русский':"Забираем от домаи доставляем на комфортных автомобилях в аэропорт",
+      'Русский':"Забираем от дома и доставляем на комфортных автомобилях в аэропорт",
       'Українська':"Забираємо від будинку і доставляємо на комфортних автомобілях в аеропорт",
       'English':"We pick up from home and deliver on comfortable cars to the airport",
    },
