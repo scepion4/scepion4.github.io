@@ -33,18 +33,21 @@ code {
   color: white;
   font-family: "Anton", sans-serif;
   text-shadow: black 2px 2px 2px;
+  transform: translateY(-100vh);
 }
 .banner-subtitle {
   padding: 30px;
   font-size: 40px;
   font-family: "Quintessential", cursive;
   text-shadow: white 2px 1px 1px;
+  transform: translateX(-100vw);
 }
 .banner-text {
   font-size: 20px;
   padding-bottom: 20px;
   color: aliceblue;
   text-shadow: black 2px 2px 2px;
+  transform: translate(100vw);
 }
 .content-banner {
   text-align: center;
